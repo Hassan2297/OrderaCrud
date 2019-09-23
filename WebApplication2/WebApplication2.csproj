@@ -186,14 +186,14 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\ICategoryRepositry.cs" />
+    <Compile Include="Repostiry\ICategoryRepositry.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\UserCategoryRepositry.cs" />
     <Compile Include="Models\UserProductRepositry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repostiry\IRepositryProduct.cs" />
+    <Compile Include="Repostiry\IProductRepositry.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>

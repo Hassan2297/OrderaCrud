@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WebApplication2.Repostiry
 {
-    interface IRepositryProduct
+    interface IProductRepositry
     {
         IEnumerable<Product> GetAll();
         Product Get(int id);

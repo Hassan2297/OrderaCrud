@@ -7,7 +7,7 @@ using WebApplication2.Repostiry;
 
 namespace WebApplication2.Models
 {
-    public class UserProductRepositry : IRepositryProduct
+    public class UserProductRepositry : IProductRepositry
     {
         private ApplicationDbContext _context;
 
