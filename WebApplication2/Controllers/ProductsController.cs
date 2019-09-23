@@ -36,20 +36,7 @@ namespace WebApplication2.Controllers
             return View(productsList);
         }
 
-        // GET: Products/Details/5
-        public ActionResult Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Product product = _context.Product.Find(id);
-            if (product == null)
-            {
-                return HttpNotFound();
-            }
-            return View(product);
-        }
+      
 
         [HttpGet]
         // GET: Prodcut form to create a product

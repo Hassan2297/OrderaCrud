@@ -10,7 +10,7 @@ namespace WebApplication2.Models
     interface ICategoryRepositry
     {
         IEnumerable<Category> GetAll();
-        Category Get(int id);
+        Category Get(int? id);
         void Add(Category item);
         void Remove(int id);
         void Update(Category item);

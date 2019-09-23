@@ -23,7 +23,7 @@ namespace WebApplication2.Models
             _context.SaveChanges();
         }
 
-        public Category Get(int id)
+        public Category Get(int? id)
         {
             var cateogry = _context.Categories.SingleOrDefault(c => c.categoryId == id);
 
