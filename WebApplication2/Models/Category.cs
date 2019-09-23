@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CrudProdcutApp.Models
+namespace WebApplication2.Models
 {
     public class Category
     {

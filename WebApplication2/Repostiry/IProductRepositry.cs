@@ -1,4 +1,4 @@
-﻿using CrudProdcutApp.Models;
+﻿using WebApplication2.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace WebApplication2.Repostiry
     interface IProductRepositry
     {
         IEnumerable<Product> GetAll();
-        Product Get(int id);
+        Product Get(int? id);
         void Add(Product item);
         void Remove(int id);
         void Update(Product item);

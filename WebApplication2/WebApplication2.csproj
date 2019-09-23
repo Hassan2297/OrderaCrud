@@ -176,12 +176,17 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201909231313065_initialModel.cs" />
     <Compile Include="Migrations\201909231313065_initialModel.Designer.cs">
       <DependentUpon>201909231313065_initialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909232039360_addprodcutField.cs" />
+    <Compile Include="Migrations\201909232039360_addprodcutField.Designer.cs">
+      <DependentUpon>201909232039360_addprodcutField.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -195,6 +200,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repostiry\IProductRepositry.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\UserProductViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -252,9 +258,14 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Products\Create.cshtml" />
+    <Content Include="Views\Products\Details.cshtml" />
+    <Content Include="Views\Products\Edit.cshtml" />
+    <Content Include="Views\Products\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -272,6 +283,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201909231313065_initialModel.resx">
       <DependentUpon>201909231313065_initialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909232039360_addprodcutField.resx">
+      <DependentUpon>201909232039360_addprodcutField.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

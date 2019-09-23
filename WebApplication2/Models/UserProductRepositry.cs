@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using CrudProdcutApp.Models;
+using WebApplication2.Models;
 using WebApplication2.Repostiry;
+using System.Data.Entity;
 
 namespace WebApplication2.Models
 {
@@ -33,7 +34,7 @@ namespace WebApplication2.Models
             throw new NotImplementedException();
         }
 
-        public Product Get(int id)
+        public Product Get(int? id)
         {
             var product = _context.Product.SingleOrDefault(c => c.productId == id);
 
@@ -45,7 +46,7 @@ namespace WebApplication2.Models
 
         public IEnumerable<Product> GetAll()
         {
-            return _context.Product.ToList();
+            return _context.Product.Include(c => c.Category).ToList();
         }
 
         public void Remove(int id)
@@ -58,11 +59,8 @@ namespace WebApplication2.Models
 
         public void Update(Product product)
         {
-            var productInDb = _context.Product.Single(c => c.productId == product.productId);
-
-            productInDb.productName = product.productName;
-            productInDb.price = product.price;
-            productInDb.Category = product.Category;
+            _context.Entry(product).State = EntityState.Modified;
+            
 
             _context.SaveChanges();
 

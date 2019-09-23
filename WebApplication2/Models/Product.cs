@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CrudProdcutApp.Models
+namespace WebApplication2.Models
 {
     public class Product
     {
@@ -12,5 +12,7 @@ namespace CrudProdcutApp.Models
         public int price { get; set; }
 
         public Category Category { get; set; }
+
+        public int CategoryId { get; set; }
     }
 }

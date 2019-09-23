@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using CrudProdcutApp.Models;
+using WebApplication2.Models;
 
 namespace WebApplication2.Models
 {
