@@ -189,9 +189,14 @@
     <Compile Include="Migrations\201909232039360_addprodcutField.Designer.cs">
       <DependentUpon>201909232039360_addprodcutField.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909240502219_addUserTable.cs" />
+    <Compile Include="Migrations\201909240502219_addUserTable.Designer.cs">
+      <DependentUpon>201909240502219_addUserTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Repostiry\ICategoryRepositry.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -290,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909232039360_addprodcutField.resx">
       <DependentUpon>201909232039360_addprodcutField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909240502219_addUserTable.resx">
+      <DependentUpon>201909240502219_addUserTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

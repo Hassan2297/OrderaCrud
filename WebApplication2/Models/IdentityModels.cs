@@ -23,6 +23,7 @@ namespace WebApplication2.Models
     {
         public DbSet<Product> Product { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<User> Users { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
